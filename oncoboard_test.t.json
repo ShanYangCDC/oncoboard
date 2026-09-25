@@ -19,10 +19,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "2.0.0",
+      "sem_ver" : "3.0.0",
       "build_uid" : "",
       "PARENT:MD5-CAM-1.0.1" : "5D7128B10BA5AF84CC9C973D48833BE9",
-      "MD5-CAM-1.0.1" : "78f0de4e2d3c3bfd2e30814d955cf006"
+      "MD5-CAM-1.0.1" : "e9fe2fbdae4166159774a356bb53973c"
     },
     "details" : {
       "de" : {
@@ -462,26 +462,26 @@
       "@type" : "RESOURCE_ANNOTATIONS",
       "documentation" : {
         "ar-sy" : {
-          "/data[at0001]/events[at0002]/data[at0003]/items[at0100]" : {
+          "/data[at0001]/events[at0002.1]/data[at0003]/items[at0100]" : {
             "fhir_mapping" : "*DiagnosticReport.requestDetail.clinicalNotes(en)"
           },
-          "/data[at0001]/events[at0002]/data[at0003]/items[at0057]" : {
+          "/data[at0001]/events[at0002.1]/data[at0003]/items[at0057]" : {
             "fhir_mapping" : "*DiagnosticReport.conclusion(en)"
           },
-          "/data[at0001]/events[at0002]/data[at0003]/items[at0118]" : {
+          "/data[at0001]/events[at0002.1]/data[at0003]/items[at0118]" : {
             "fhir_mapping" : "*DiagnosticReport.presentedForm(en)"
           }
         },
         "en" : { },
         "nb" : { },
         "zh-cn" : {
-          "/data[at0001]/events[at0002]/data[at0003]/items[at0100]" : {
+          "/data[at0001]/events[at0002.1]/data[at0003]/items[at0100]" : {
             "fhir_mapping" : "*DiagnosticReport.requestDetail.clinicalNotes(en)"
           },
-          "/data[at0001]/events[at0002]/data[at0003]/items[at0057]" : {
+          "/data[at0001]/events[at0002.1]/data[at0003]/items[at0057]" : {
             "fhir_mapping" : "*DiagnosticReport.conclusion(en)"
           },
-          "/data[at0001]/events[at0002]/data[at0003]/items[at0118]" : {
+          "/data[at0001]/events[at0002.1]/data[at0003]/items[at0118]" : {
             "fhir_mapping" : "*DiagnosticReport.presentedForm(en)"
           }
         },
@@ -519,7 +519,8 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "EVENT",
-              "nodeId" : "at0002",
+              "occurrences" : "1..1",
+              "nodeId" : "at0002.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "data",
@@ -533,7 +534,7 @@
                     "children" : [ {
                       "@type" : "C_ARCHETYPE_ROOT",
                       "rmTypeName" : "CLUSTER",
-                      "occurrences" : "0..1",
+                      "occurrences" : "0..*",
                       "nodeId" : "at0097.1",
                       "attributes" : [ ],
                       "attributeTuples" : [ ],
@@ -1103,7 +1104,7 @@
             "children" : [ {
               "@type" : "C_ARCHETYPE_ROOT",
               "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..1",
+              "occurrences" : "0..*",
               "nodeId" : "at0019.1",
               "attributes" : [ ],
               "attributeTuples" : [ ],
@@ -1418,7 +1419,7 @@
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "CLUSTER",
-          "occurrences" : "0..1",
+          "occurrences" : "1..1",
           "nodeId" : "at0014.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
